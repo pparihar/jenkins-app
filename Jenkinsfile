@@ -15,7 +15,7 @@ node{
       stage('Deploy') {     
            sshagent(['deploy_user']) {
     // some block
-               sh 'scp -o StrictHostKeyChecking=no /target/tomcatdeploymnetdemo.war ubuntu@3.16.37.55:/var/lib/tomcat9/webapps'
+               sh 'scp -o StrictHostKeyChecking=no target/tomcatdeploymnetdemo.war ubuntu@3.16.37.55:/var/lib/tomcat9/webapps'
               
           }
          
