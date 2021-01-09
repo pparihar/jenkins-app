@@ -16,6 +16,7 @@ node{
            sshagent(['deploy_user']) {
     // some block
                sh 'scp -o StrictHostKeyChecking=no target/tomcatdeploymnetdemo.war ubuntu@18.219.152.242:/var/lib/tomcat9/webapps'
+              //sh 'sudo systemctl restart tomcat9' 
               
           }
          
