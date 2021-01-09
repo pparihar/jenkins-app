@@ -15,9 +15,9 @@ node{
       stage('Deploy') {     
            sshagent(['deploy_user']) {
     // some block
-               sh 'scp -o StrictHostKeyChecking=no target/tomcatdeploymnetdemo.war ubuntu@3.135.236.78:/var/lib/tomcat9/webapps'
                sh 'sudo chown -R ubuntu:ubuntu /var'
                sh 'sudo chown -R ubuntu:ubuntu /opt'
+               sh 'scp -o StrictHostKeyChecking=no target/tomcatdeploymnetdemo.war ubuntu@3.135.236.78:/var/lib/tomcat9/webapps'
                sh 'sudo systemctl restart tomcat9' 
               
           }
