@@ -21,7 +21,7 @@ node{
     //    sh 'sudo systemctl restart tomcat9' 
           sh echo 'application deployed'   
           }
-         
+        } 
      }
       
  }
