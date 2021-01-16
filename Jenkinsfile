@@ -13,7 +13,7 @@ node{
       }  
     
       stage('Deploy') {
-     steps {
+     //steps {
        echo 'Deploying...'
      }
    }
