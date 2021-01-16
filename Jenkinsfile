@@ -17,7 +17,7 @@ node{
        echo 'Deploying...'
      }
    }
-  }
+  
 
 // ### Deploy on Tomcat Server###
     //  stage('Deploy') {     
